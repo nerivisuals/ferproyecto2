@@ -1,0 +1,157 @@
+/* General */
+body {
+  font-family: "Poiret One", serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: rgb(7, 7, 141);
+  background-color: #ffffff;
+}
+
+/* Header */
+header {
+  background: rgb(7, 7, 141);
+  color: #f5f5f5;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #415a77;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(7, 7, 141);
+  border-bottom: 2px solid #415a77;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Login Section */
+#login-section {
+  display: grid;
+  place-items: center; /* Centra horizontal y verticalmente */
+  height: 80vh; /* Toda la altura de la pantalla o contenedor */
+}
+
+/* Forms */
+form input, form textarea, form button {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input, form textarea {
+  background: #e6eefc;
+  color: #050d58;
+}
+
+form button {
+  background: #050d58;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #4573f3;
+}
+
+.error {
+  color: #f94144;
+  text-align: center;
+}
+
+/* Proyectos */
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  background: #ffffff;
+  border: 1px solid #415a77;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.project h3 {
+  color: rgb(7, 7, 141);
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #6c757d;
+}
+
+.project button {
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.project button.delete {
+  background: #f94144;
+}
+
+.project button:hover {
+  background: rgb(144, 159, 254);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: rgb(7, 7, 141);
+  color: #f5f5f5;
+  padding: 10px 0;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
